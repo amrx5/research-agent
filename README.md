@@ -1,4 +1,4 @@
-# Multi-Tool Research Assistant Agent (draft)
+# (M3.6) Multi-Tool Research Assistant Agent (draft)
 
 An agent that answers multi-step technical questions by choosing among three tools (web search, a local paper corpus, and a Python sandbox), checking every tool result, and writing a cited answer. The code follows the M2 design: **plan → act → validate → synthesize**.
 
