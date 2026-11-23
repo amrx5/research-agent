@@ -1,0 +1,16 @@
+# core
+anthropic>=0.40
+pydantic>=2.6
+python-dotenv>=1.0
+typer>=0.12
+httpx>=0.27
+# web search
+tavily-python>=0.5
+# paper retrieval
+chromadb>=1.0
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+pymupdf>=1.24
+# demo + tests
+streamlit>=1.38
+pytest>=8.0
