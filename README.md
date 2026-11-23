@@ -25,7 +25,7 @@ docker build -t research-agent-sandbox sandbox/
 mkdir -p data/papers && cp your_papers/*.pdf data/papers/
 python scripts/build_corpus.py --pdf-dir data/papers --meta data/papers.csv
 
-python -m agent.cli ask "In 'Attention Is All You Need', how much higher (%) is the EN-FR BLEU than EN-DE?"
+python -m agent.cli ask a question
 streamlit run app/streamlit_app.py         # demo UI
 pytest -q                                  # offline tests: no keys, network or Docker needed
 ```
