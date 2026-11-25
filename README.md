@@ -76,7 +76,5 @@ Each run writes a CSV (one row per question; text answers left for manual gradin
 ## Status and known gaps (draft)
 
 - Tested offline: the full loop, the router, the validator, synthesizer checks, fault injection, and the local sandbox mode. Chroma/BM25 indexing and retrieval, and the Anthropic adapter, were smoke-tested against the real libraries (stub embeddings, mocked HTTP).
-- **Not yet run:** live API calls (Claude, Tavily, Brave), the sentence-transformers embedding model, and the Docker sandbox. Run these first.
-- Change from M2: page text comes from Tavily's `include_raw_content` instead of httpx + trafilatura (less code, same result). Note this in the M3 design doc (M3.5).
+- **Not yet run:** live API calls (Claude, Tavily, Brave), the sentence-transformers embedding model, and the Docker sandbox.
 - `eval/questions.example.jsonl` holds only 4 example questions; the team still writes the 60-question set.
-- Fill in `PRICE_*_PER_MTOK` so cost metrics are real.
